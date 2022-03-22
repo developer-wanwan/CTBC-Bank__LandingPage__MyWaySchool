@@ -68,6 +68,8 @@ header .navbar-toggler:focus {
 header .navbar-toggler-icon i{
     color: #FFF; 
     font-size: 27px;
+    position: relative;
+    top: -5px;
 }
 
 /*Main Contents*/
