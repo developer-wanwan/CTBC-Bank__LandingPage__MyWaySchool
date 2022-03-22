@@ -1,0 +1,946 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif !important;
+}
+.sub-logo{
+    position: absolute;
+    top: 6%; left: 3%;
+}
+h2.topic{
+    color: #007c7c;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: .5em;
+}
+p{
+    margin-bottom: 0 !important;
+}
+p.statement{
+    color: #565656; 
+    letter-spacing: .75px !important;
+    font-weight: 500 !important;
+}
+.row{
+    margin-right: 0 !important; 
+    margin-left: 0 !important;
+}
+button.to-top{
+    background: #007c7c; color: #FFF;
+    border-radius: 100%; border: none;
+    width: 60px; height: 60px;
+    position: absolute; right: 3em;
+}
+button.to-top i{
+    font-size: 33px;
+}
+
+/*Header*/
+header .navbar{
+    background: #007c7c;
+}
+header .navbar-collapse{
+    flex-grow: 0;
+}
+header .navbar-brand{
+    margin-left: 2em;
+}
+header .navbar a.nav-link{
+    color: #fcfff7;
+    font-size: 18px; font-weight: 500;
+    letter-spacing: 1.5px;
+    padding-right: .75em !important; 
+    padding-left: .75em !important;
+}
+header .navbar a.nav-link:nth-last-child(1){
+    padding-right: 2.5em !important; 
+}
+
+/*RWD*/
+header .navbar-toggler:focus {
+    box-shadow: none;
+}
+header .navbar-toggler-icon i{
+    color: #FFF; 
+    font-size: 27px;
+}
+
+/*Main Contents*/
+section{
+    width: 100%;
+    position: relative;
+}
+
+#index-slide1{
+    background-image: url('../img/myapp_main_background.png');
+    background-repeat: repeat-x;
+    background-size: cover;
+}
+#index-slide1 .welcome-to-myWay{
+    position: relative; top: 7em;
+}
+#index-slide1 .welcome-to-myWay img{
+    display: block; margin: auto;
+}
+#index-slide1 .welcome-to-myWay img.bird{
+    position: relative;
+    z-index: 5; bottom: 3.5em;
+}
+#index-slide1 .points-container{
+    margin-top: 10em;
+    text-align: center;
+}
+#index-slide1 .points-container .points{
+    display: inline-block;
+}
+#index-slide1 .point{
+    width: 260px; height: 260px;
+    border-radius: 100%;
+    background: #fef1d1;
+    border: 8px solid #29b0a2;
+    margin: 0 2.5em; margin-bottom: 2em;
+    /*Inside Alignment*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#index-slide1 .point .inside-contents img{
+    height: 100px;
+}
+#index-slide1 .point .inside-contents p{
+    font-size: 24px; font-weight: bold;
+    color: #007c7c; letter-spacing: .5px;
+    position: relative; top: 1em;
+}
+
+#index-slide2{
+    padding-top: 2em;
+}
+#index-slide2 .otp-statement{
+    padding-top: 1em;
+}
+#index-slide2 .otp-statement p{
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 1.3;
+}
+#index-slide2 .otp-methods{
+    display: flex;
+    justify-content: center;
+}
+#index-slide2 .otp-methods .otp-birds{
+    width: 500px;
+}
+#index-slide2 .otp-methods .otp-birds img{
+    display: block; margin: auto;
+    margin-top: 1em;
+}
+#index-slide2 article{
+    margin-top: 1.85em;
+}
+#index-slide2 .otp-methods article{
+    margin-left: 2em;
+}
+#index-slide2 article .advise-container{
+    border-radius: 25px;
+    border: 2px solid #29b0a2;
+    padding: .9em 0; margin: 1.5em 0;
+    /*Inside Alignment*/
+    display: flex;
+    align-items: center;
+}
+#index-slide2 article .icon{
+    width: 80px; height: 80px;
+    border-radius: 100%;
+    background: #29b0a2;
+    transform: translateX(-40px);
+    /*Inside Alignment*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#index-slide2 article .icon .bank-icon{
+    position: relative; top: -2.5px;
+}
+#index-slide2 article .advise-container h3{
+    color: #29b0a2;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 30px;
+}
+#index-slide2 article .advise-container .topic{
+    width: 230px; left: -0.75em;
+    position: relative;
+}
+#index-slide2 article .advise-container .method{
+    width: 300px;
+    margin: 0 .5em;
+}
+#index-slide2 article .advise-container .method p{
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+#index-slide2 article .advise-container button{
+    width: 150px; padding: 0.7em 0; margin: 0 1em;
+    background-image: linear-gradient(#f94001, #db0600);
+    border-radius: 30px; letter-spacing: 1px;
+    color: #FFF; font-size: 18px;
+    border: none; outline: none;
+    text-align: center;
+}
+#index-slide2 article .advise-container button span{
+    position: relative; left: 3px;
+}
+#index-slide2 article .advise-container button span i{
+    background: #FFF; border-radius: 100%;
+    color: #f94001; font-size: 18.5px;
+    padding: .25px 4px;
+}
+
+#index-slide3{
+    background: url(../img/myway_light_green_background.png);
+    background-size: cover; margin-top: 4em; padding-top: 5em;
+    background-position: center; background-position-y: 0%;
+}
+#index-slide3 img.left-bird{
+    position: absolute; left: 0;
+}
+#index-slide3 img.right-bird{
+    position: absolute; right: 0;
+}
+#index-slide3 article{
+    padding-top: 4.5em;
+}
+#index-slide3 article h2{
+    color: #FFF; 
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: .5em;
+}
+#index-slide3 article p{
+    font-size: 25px;
+    line-height: 1.3;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+#index-slide3 article p.statement{
+    font-size: 18px;
+    margin-top: 1em;
+}
+#index-slide3 article .click-here{
+    margin-top: 3.75em;
+}
+#index-slide3 article button{
+    width: 240px; padding: 0.7em 0; margin: 0 1em;
+    background-image: linear-gradient(#f94001, #db0600);
+    border-radius: 30px; letter-spacing: 1px;
+    color: #FFF; font-size: 18px;
+    border: none; outline: none;
+    text-align: center;
+}
+#index-slide3 article button span{
+    position: relative; left: 10px;
+}
+#index-slide3 article button span i{
+    background: #FFF; border-radius: 100%;
+    color: #f94001; font-size: 18.5px;
+    padding: .25px 4px;
+}
+#index-slide3 .advantages-container{
+    padding-top: 5em; padding-bottom: 7em;
+    text-align: center;
+}
+#index-slide3 .advantages-container .advantages{
+    display: inline-block;
+}
+#index-slide3 .advantage{
+    width: 260px; height: 260px;
+    border-radius: 100%;
+    background: #FFF; text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+    margin: 0 2.5em; margin-bottom: 2em;
+    /*Inside Alignment*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#index-slide3 .advantage .inside-contents img{
+    height: 100px;
+}
+#index-slide3 .advantage .inside-contents p{
+    font-size: 24px; font-weight: bold;
+    letter-spacing: .5px; top: .5em;
+    position: relative; line-height: 1.2;
+}
+
+#index-slide4{
+    margin-top: 0; padding-top: 3em;
+}
+#index-slide4 img.left-cloud{
+    position: absolute; left: 0;
+    z-index: -1;
+}
+#index-slide4 img.right-cloud{
+    position: absolute; right: 0;
+    z-index: -1;
+}
+#index-slide4 article{
+    padding-top: 2em;
+}
+#index-slide4 article p{
+    font-size: 25px;
+    line-height: 1.3;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+#index-slide4 .advise-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+#index-slide4 .advise-container > *{
+    z-index: 10;
+}
+#index-slide4 .advise-container .word-frame{
+    background: url(../img/myway_words_frame.png);
+    background-repeat: no-repeat; margin: 0 3em;
+    width: 469px; height: 398px; object-fit: cover;
+    /*Inside-Alignment*/
+    display: flex; align-items: center;
+}
+#index-slide4 .advise-container .word-frame .inside-contents{
+    position: relative; left: .8em;
+}
+#index-slide4 .advise-container img.transfer-bird{
+    margin: 0 3em;
+}
+#index-slide4 .advise-container h3{
+    color: #007c7c;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: .85em;
+}
+#index-slide4 .advise-container p{
+    font-size: 18px;
+    line-height: 1.3;
+    font-weight: bold;
+}
+#index-slide4 .advise-container p.statement{
+    font-size: 15px;
+    margin-top: 1em;
+    margin-bottom: 2.75em !important;
+}
+#index-slide4 .advise-container button{
+    width: 345px; padding: 0.7em 0; margin: 0 1em;
+    background-image: linear-gradient(#f94001, #db0600);
+    border-radius: 30px; letter-spacing: 1px;
+    color: #FFF; font-size: 18px;
+    border: none; outline: none;
+    text-align: center;
+}
+#index-slide4 .advise-container button span{
+    position: relative; left: 10px;
+}
+#index-slide4 .advise-container button span i{
+    background: #FFF; border-radius: 100%;
+    color: #f94001; font-size: 18.5px;
+    padding: .25px 4px;
+}
+
+#index-slide5{
+    background: url(../img/myway_payments_background.png);
+    background-size: cover; background-position: center;
+    background-position-y: 0; margin-top: -12em;
+}
+#index-slide5 article{
+    padding-top: 16em;
+}
+#index-slide5 article p{
+    font-size: 25px;
+    line-height: 1.3;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+#index-slide5 .payments{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#index-slide5 .payments > *{
+    z-index: 10; 
+}
+#index-slide5 .payment-methods{
+    width: 700px; 
+}
+#index-slide5 .method{
+    display: inline-block; text-align: center;
+    width: 290px; padding: 1em 0; margin: .6em .4em;
+    background: #FFF; border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 6px;
+}
+#index-slide5 .method p{
+    margin-bottom: 0;
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #007c7c;
+}
+#index-slide5 .click-here{
+    margin-top: 3.25em;
+}
+#index-slide5 button{
+    width: 260px; padding: 0.7em 0; 
+    background-image: linear-gradient(#f94001, #db0600);
+    border-radius: 30px; letter-spacing: 1px;
+    color: #FFF; font-size: 18px;
+    border: none; outline: none;
+}
+#index-slide5 button span{
+    position: relative; left: 10px;
+}
+#index-slide5 button span i{
+    background: #FFF; border-radius: 100%;
+    color: #f94001; font-size: 18.5px;
+    padding: .25px 4px;
+}
+
+footer.application{
+    background: #ddf5f2; width: 100%; 
+    position: relative; margin-top: -14.75em;
+    padding-top: 20em; padding-bottom: 9.5em;
+}
+footer.application .application-link-container{
+    width: 800px; margin: auto; 
+    background: #FFF; border-radius: 50px; 
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 6px;
+    padding-top: 3.25em; 
+}
+footer.application span.bird{ 
+    width: 331px; height: 259px; cursor: pointer;
+    background: url(../img/myway_app_bird_1.png);
+    background-repeat: no-repeat; z-index: -1;
+    position: absolute; left: 0; right: -60em;
+    margin-left: auto; margin-right: auto;
+}
+footer.application .application-link-container .inside-contents{
+    display: flex; justify-content: center; align-items: center;
+}
+footer.application .application-link-container .inside-contents .section{
+    margin: 0 1.5em;
+}
+footer.application .application-link-container h2{
+    font-size: 30px !important;
+    letter-spacing: .5px;
+}
+footer.application .application-link-container .images{
+    display: flex; justify-content: center;
+}
+footer.application .application-link-container .images .group img{
+    display: block; margin: auto;
+}
+footer.application .os-support{
+    padding: 1.4em 3.8em;
+}
+footer.application .os-support p{
+    font-size: 15px; margin-bottom: 0;
+}
+
+/*RWD - Carousel*/
+#index-slide2 .carousel{
+    text-align: center;
+    margin-top: 0;
+}
+#index-slide2 .carousel .flickity-viewport {
+    padding-top: 5em;
+    height: 350px !important;
+}
+#index-slide2 .carousel .flickity-button {
+    display: none;
+}
+#index-slide2 .carousel .flickity-page-dots .dot.is-selected {
+    background: #29b0a2;
+}
+#index-slide2 .carousel .flickity-page-dots .dot {
+    background: #7B7B7B;
+}
+#index-slide2 .carousel-icon{
+    display: flex;
+    justify-content: center;
+    margin-top: -35px;
+}
+#index-slide2 .carousel .icon{
+    width: 70px; height: 70px;
+    border-radius: 100%;
+    background: #29b0a2; 
+    /*Inside Alignment*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#index-slide2 .carousel .icon img{
+    width: 45px;
+}
+#index-slide2 .carousel .icon .bank-icon{
+    position: relative; top: -2.5px;
+}
+#index-slide2 .carousel h3{
+    color: #29b0a2;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: .5em;
+}
+#index-slide2 .carousel .method{
+    padding: 0 1.5em;
+}
+#index-slide2 .carousel p{
+    margin-bottom: 0;
+    font-size: 15.5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+#index-slide2 .carousel .click-here{
+    position: absolute; bottom: 1.5em;
+    margin-left: auto; margin-right: auto;
+    left: 0; right: 0; 
+}
+#index-slide2 .carousel .click-here button{
+    width: 150px; padding: 0.5em 0; margin: 0 1em;
+    background-image: linear-gradient(#f94001, #db0600);
+    border-radius: 30px; letter-spacing: 1px;
+    color: #FFF; font-size: 18px;
+    border: none; outline: none;
+    text-align: center;
+}
+#index-slide2 .carousel .click-here button span{
+    position: relative; left: 3px;
+}
+#index-slide2 .carousel .click-here button span i{
+    background: #FFF; border-radius: 100%;
+    color: #f94001; font-size: 18.5px;
+    padding: .25px 4px;
+}
+
+/*RWD*/
+
+@media only screen and (max-width: 559px){
+    #index-slide1 {
+        background: url(../img/myapp_main_background_mobile.png) no-repeat;
+        background-size: contain;
+    }
+    .sub-logo{
+        position: absolute;
+        top: 8%;
+        left: 6%;
+    }
+}
+
+@media only screen and (min-width: 560px) and (max-width: 847px){
+    .sub-logo{
+        position: absolute;
+        top: 11%;
+    }
+}
+
+@media only screen and (min-width: 560px) and (max-width: 1026px){
+    #index-slide1{
+        background-position: center;
+    }
+}
+
+@media only screen and (min-width: 557px) and (max-width: 765px){
+    #index-slide1 .point {
+        width: 120px !important;
+        height: 120px !important;
+        margin: 0 5px !important;
+    }
+    #index-slide1 .point .inside-contents img.message-icon{
+        width: 33px !important;
+        height: 56px !important;
+    }
+    #index-slide1 .point .inside-contents img.accreditation-icon{
+        width: 44px !important;
+        height: 50px !important;
+    }
+    #index-slide1 .point .inside-contents img.cash-transfer-icon{
+        width: 62px !important;
+        height: 40px !important;
+    }
+    #index-slide1 .point .inside-contents img.payments-icon{
+        width: 63px !important;
+        height: 55px !important;
+    }
+    #index-slide1 .point .inside-contents p {
+        font-size: 14px !important;
+    }
+}
+
+@media only screen and (max-width: 670px){
+    #index-slide3 {
+        background: url(../img/myway_light_green_background_mobile.png);
+        background-size: contain; background-repeat: repeat-x;
+        margin-top: 6em; padding-bottom: 1em;
+    }
+}
+
+@media only screen and (max-width: 995px){
+    header nav .container-fluid{
+        padding-right: 0 !important; 
+        padding-left: 0 !important; 
+    }
+    header .navbar{
+        padding-bottom: 0 !important;
+    }
+    header .navbar-nav {
+        margin-top: 1.25em;
+        margin-bottom: 0 !important;
+    }
+    header .navbar a.nav-link:nth-last-child(1) {
+        padding-right: 0 !important; 
+        padding-left: 0 !important;
+    }
+    header .navbar .nav-item:nth-child(1){
+        border-top: 1px solid #FFF;
+    }
+    header .navbar .nav-item{
+        text-align: center;
+        border-bottom: 1px solid #FFF;
+        padding-top: .35em; padding-bottom: .35em;
+    }
+    header .navbar .nav-item:last-child{
+        border-bottom: 2px solid #FFF;
+    }
+    footer.application span.bird {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    
+    h2.topic{
+        font-size: 24px;
+    }
+    header .navbar-brand {
+        margin-left: 1em;
+        padding-bottom: .5em;
+    }
+    button{
+        font-size: 16px !important;
+    }
+
+    #index-slide1 .welcome-to-myWay {
+        position: relative;
+        top: 9.6em;
+    }
+    #index-slide1 .welcome-to-myWay img {
+        width: 307px;
+    }
+    #index-slide1 .welcome-to-myWay img.bird {
+        width: 277px;
+        bottom: 1.7em;
+    }
+    #index-slide1 .points-container {
+        margin-top: 11em;
+        text-align: center;
+    }
+    #index-slide1 .point{
+        width: 156px; height: 156px;
+        margin: 0 .88em; margin-bottom: 1.55em;
+        vertical-align: top;
+    }
+    #index-slide1 .point .inside-contents img.message-icon{
+        width: 55px;
+        height: 86px;
+    }
+    #index-slide1 .point .inside-contents img.accreditation-icon{
+        width: 74px;
+        height: 85px;
+    }
+    #index-slide1 .point .inside-contents img.cash-transfer-icon{
+        width: 92px;
+        height: 70px;
+    }
+    #index-slide1 .point .inside-contents img.payments-icon{
+        width: 93px;
+        height: 85px;
+    }
+    #index-slide1 .point .inside-contents p {
+        font-size: 17px;
+        letter-spacing: .75px;
+        top: .18em;
+    }
+    #index-slide1 .points:nth-child(3) .point .inside-contents p{
+        top: .55em;
+    }
+
+    #index-slide2 .otp-statement p {
+        font-size: 15.5px;
+        letter-spacing: .5px;
+    }
+    #index-slide2 .otp-methods {
+        display: block;
+    }
+    #index-slide2 .otp-methods .otp-birds {
+        width: inherit;
+    }
+    #index-slide2 .otp-methods .otp-birds img{
+        display: block;
+        margin: auto;
+        margin-top: .75em;
+    }
+    #index-slide2 .otp-methods .otp-birds img:nth-child(1){
+        margin-top: 1.75em;
+        width: 268px;
+    }
+    #index-slide2 .otp-methods .otp-birds img:nth-child(2){
+        width: 334px;
+    }
+    #index-slide2 .otp-methods .advise-area{
+        display: none;
+    }
+
+    #index-slide3 {
+        background: url(../img/myway_light_green_background_mobile.png);
+        background-size: contain; background-repeat: repeat-x;
+        margin-top: 6em; padding-bottom: 1em; padding-top: 3em;
+    }
+    #index-slide3 img.left-bird{
+        width: 125px;
+        top: -3.3em;
+    }
+    #index-slide3 img.right-bird{
+        width: 150px;
+        top: -3.15em;
+    }
+    #index-slide3 article{
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    #index-slide3 article h2 {
+        color: #FFF;
+        font-size: 24px;
+        margin-bottom: .35em;
+    }
+    #index-slide3 article p {
+        font-size: 15.5px;
+        letter-spacing: .5px;
+    }
+    #index-slide3 article p.statement {
+        font-size: 12.5px;
+        letter-spacing: 1px !important;
+        text-align: justify;
+    }
+    #index-slide3 .advantages-container {
+        display: block; 
+        padding-top: 2.5em;
+    }
+    #index-slide3 .advantage{
+        width: 280px; height: 72px;
+        display: inline-block; 
+        border-radius: 50px;
+        box-shadow: rgb(0 0 0 / 40%) 0px 3px 5px;
+        margin-bottom: 1em;  padding: .75em .5em;
+        margin-left: 1em; margin-right: 1em;
+    }
+    #index-slide3 .advantage .inside-contents .image{
+        width: 60px;
+    }
+    #index-slide3 .advantage .inside-contents .content{
+        width: 200px; height: 37px;
+    }
+    #index-slide3 .advantage .inside-contents p{
+        font-size: 20px;
+        letter-spacing: .5px;
+        position: relative;
+        display: inline-block;
+    }
+    #index-slide3 .advantage .inside-contents p:nth-last-child(1){
+        position: relative; left: -2.5px;
+    }
+    #index-slide3 .advantage .inside-contents img{
+        position: relative; 
+    }
+    #index-slide3 .advantage .inside-contents img.message-icon{
+        width: 52px; height: 51px;
+    }
+    #index-slide3 .advantage .inside-contents img.accreditation-icon{
+        width: 52px; height: 50px;
+    }
+    #index-slide3 .advantage .inside-contents img.cash-transfer-icon{
+        width: 50px; height: 52px;
+    }
+    #index-slide3 .advantage .inside-contents img.payments-icon{
+        width: 47px; height: 47px;
+    }
+    #index-slide3 .advantage .inside-contents img.receive-message-icon{
+        width: 43px; height: 50px;
+    }
+    #index-slide3 article .click-here {
+        position: absolute; bottom: 2.37em;
+        left: 0; right: 0; padding-bottom: 1em;
+        margin-left: auto; margin-right: auto;
+    }
+    #index-slide3 article button{
+        width: 220px;
+    }
+
+    #index-slide4 {
+        margin-top: 0;
+    }
+    #index-slide4 img.left-cloud {
+        display: none;
+    }
+    #index-slide4 img.right-cloud {
+        display: none;
+    }
+    #index-slide4 article p {
+        font-size: 15.5px;
+        letter-spacing: .5px;
+    }
+    #index-slide4 .advise-container {
+        display: block;
+        margin-top: 2em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #index-slide4 .advise-container .word-frame {
+        margin: auto; 
+        width: 340px; height: 300px;
+        background: url(../img/myway_words_frame_mobile.png) no-repeat;
+        align-items: normal;
+    }
+    #index-slide4 .advise-container .word-frame .inside-contents {
+        position: relative;
+        left: 0.5em;
+        margin-top: 2em;
+    }
+    #index-slide4 .advise-container h3 {
+        letter-spacing: 0;
+        font-size: 24px;
+        margin-bottom: .5em;
+    }
+    #index-slide4 .advise-container button {
+        width: 280px;
+    }
+    #index-slide4 .advise-container p.statement {
+        font-size: 12.5px !important;
+        letter-spacing: 1px !important;
+        margin-bottom: 1em !important;
+    }
+    #index-slide4 .advise-container img.transfer-bird{
+        width: 234px; height: 157px;
+        display: block; margin: auto;
+        position: relative; top: -4em;
+    }
+
+    #index-slide5 {
+        background: url(../img/myway_payments_background_mobile.png);
+        background-size: contain; 
+        background-position: normal;
+        background-repeat: repeat-x;
+        margin-top: -7.25em; padding-bottom: 14em;
+    }
+    #index-slide5 article {
+        padding-top: 7.5em;
+    }
+    #index-slide5 article p {
+        font-size: 15.5px;
+        letter-spacing: .5px;
+    }
+    #index-slide5 .payment-methods {
+        width: 700px; margin-top: 1em;
+    }
+    #index-slide5 .method{
+        display: inline-block;
+        text-align: center;
+        width: 156px;
+        padding: .75em 0;
+        margin: 0.6em 0.4em;
+        border-radius: 50px;
+        box-shadow: rgb(0 0 0 / 20%) 0px 3px 5px;
+    }
+    #index-slide5 .method p{
+        font-size: 15.5px;
+    }
+    #index-slide5 img.payments-bird{
+        position: absolute;
+        left: 1em; bottom: 0;
+        width: 245px; height: 239px;
+    }
+    #index-slide5 .click-here {
+        margin-top: 1.5em;
+    }
+    #index-slide5 article button{
+        width: 220px;
+    }
+
+    footer.application{
+        background: #ddf5f2; width: 100%; 
+        position: relative; margin-top: -12.25em;
+        padding-top: 11.25em; padding-bottom: 5em;
+    }
+    footer.application .application-link-container {
+        width: 300px; margin: auto;
+        border-radius: 25px;
+        box-shadow: rgb(0 0 0 / 40%) 0px 3px 5px;
+        padding-top: 2em;
+    }
+    footer.application .application-link-container .inside-contents {
+        display: block;
+    }
+    footer.application .application-link-container .inside-contents .section {
+        text-align: center;
+    }
+    footer.application .application-link-container .inside-contents img.myWay-app-icon{
+        width: 200px; margin-bottom: 1.3em;
+    }
+    footer.application .application-link-container h2 {
+        font-size: 24px !important;
+        letter-spacing: 1px;
+    }
+    footer.application .application-link-container .images .group {
+        margin: 0 6px;
+    }
+    footer.application .application-link-container .images .group img {
+        width: 120px;
+    }
+    footer.application .os-support {
+        padding: 1.4em 1.25em;
+    }
+    footer.application button.to-top {
+        margin-top: -1em;
+    }
+
+}
+
+@media only screen and (min-width: 1026px) and (max-width: 1390px){
+    #index-slide1 .point {
+        width: 220px;
+        height: 220px;
+        margin: 0 10px;
+    }
+    #index-slide1 .point .inside-contents p {
+        top: .35em;
+    }
+}
+
+@media only screen and (min-width: 1368px) and (max-width: 1750px){
+    #index-slide3 .advantage {
+        width: 220px;
+        height: 220px;
+        margin: 0 20px;
+    }
+    #index-slide3 .advantage .inside-contents img {
+        height: 80px;
+    }
+}

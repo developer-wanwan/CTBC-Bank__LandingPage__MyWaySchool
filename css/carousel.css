@@ -1,0 +1,29 @@
+/*External Style - Carousel*/
+
+.carousel {
+    background: #FFF;
+    margin-top: 5em;
+}
+.carousel-cell {
+    width: 75%; height: 240px;
+    background: #FFF; margin-right: 30px;
+    border: 2px solid #29b0a2; border-radius: 25px;
+    counter-increment: carousel-cell;
+}
+/* cell number */
+.carousel-cell:before {
+    display: block;
+    text-align: center;
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+}
+
+/* For mobile phones: */
+@media only screen and (min-width: 850px){
+    
+    .index-carousel{
+        display: none;
+    }
+
+}
