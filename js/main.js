@@ -39,7 +39,8 @@ gsap.fromTo('#index-slide1 .points-container .points', {
     y: 0, opacity: 1, 
     duration: 1, ease: "sine.inOut",
     scrollTrigger:{
-        trigger: '#index-slide1 .points-container .points',
+        trigger: '#index-slide1',
+        start: 'bottom 80%'
     }
 })
 
@@ -59,7 +60,7 @@ gsap.fromTo('#index-slide2 .carousel', {
     y: 0, opacity: 1, delay: 1,
     duration: 1, ease: "sine.inOut",
     scrollTrigger:{
-        trigger: '#index-slide2 .otp-methods .otp-birds img:last-child',
+        trigger: '#index-slide2 .carousel',
     }
 })
 
